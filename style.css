@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px; /* Header balandligi */
+    background: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* Logo Dizayni */
+.logo-box {
+    background-color: #282c34;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.feed {
+    color: #ffcc00;
+    font-weight: 800;
+    font-size: 22px;
+    text-transform: lowercase;
+}
+
+.up {
+    color: white;
+    background-color: #e31e24;
+    padding: 0 4px;
+    border-radius: 3px;
+    margin-left: 3px;
+    font-weight: 800;
+    font-size: 22px;
+    text-transform: lowercase;
+}
+
+/* Linklar */
+.nav-links {
+    margin-left: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #e31e24;
+}
+
+/* O'ng taraf */
+.nav-right {
+    margin-left: auto; /* O'ngga suradi */
+    display: flex;
+    align-items: center;
+}
+
+.order-btn {
+    background-color: #e31e24;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: 0.2s;
+}
+
+.order-btn:hover {
+    background-color: #c4191f;
+}
+
+.contact {
+    text-align: right;
+}
+
+.phone {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.hours {
+    font-size: 11px;
+    color: #a7a6a6;
+    margin-top: 2px;
+}
+
+/* Ikonkalar */
+.icons {
+    display: flex;
+    gap: 20px;
+    margin-left: 15px;
+    font-size: 15px;
+    color: #333;
+    align-items: center;
+}
+
+.icons i {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icons i:hover {
+    color: #e31e24;
+}
+
+.full-slider {
+  margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Balandlikni o'zingizga moslang */
+}
+
+.slides-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Rasmni buzmasdan to'ldiradi */
+}
+
+/* Strelkalar (To'liq va chekkada) */
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-size: 20px;
+    color: #e31e24;
+    transition: 0.3s;
+}
+
+.arrow-btn:hover {
+    background: #e31e24;
+    color: white;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* Indikatorlar */
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: white;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.category-nav {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px; /* Ekran chetidan 20px masofa */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #f2f2f2;
+    width: 100%; /* Butun ekranni egallaydi */
+}
+
+.category-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    flex: 1; /* O'rtadagi ro'yxat bor bo'sh joyni egallaydi */
+    padding: 10px 0;
+}
+
+/* Scrollbarni yashirish */
+.category-list::-webkit-scrollbar {
+    display: none;
+}
+.category-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.cat-item {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+
+/* Aktiv kategoriya - Rasmga xos qizil chegara */
+.cat-item.active {
+    border: 1px solid #e31e24;
+    color: #000;
+}
+
+.cat-item:hover {
+    color: #e31e24;
+}
+
+/* Strelkalar */
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.nav-arrow:hover {
+    color: #000;
+}
+
+.main-content {
+    padding-bottom: 10px;
+
+}
+
+.title-container {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.divider-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Chap tomondagi chiziq */
+.divider-title::before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e31e24; /* FeedUp qizil chizig'i */
+    margin-right: 20px;
+}
+
+/* O'ng tomondagi chiziq */
+.divider-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e31e24; /* FeedUp qizil chizig'i */
+    margin-left: 20px;
+}
+
+/* Setka (Grid) tizimi */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 ta ustun */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Mahsulot kartochkasi */
+.product-card {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transform: translateY(-5px);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 53%;
+    padding-top: 10px;
+    /* align-items: center; */
+}
+
+.badge {
+    background: #e31e24;
+    color: white;
+    font-size: 11px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    /* font-weight: 500; */
+}
+
+.wishlist-btn {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.product-image {
+    text-align: center;
+}
+
+.product-image img {
+    height: 300px;
+    width: 100%;
+}
+
+.product-info{
+  padding: 10px;
+  color: #333;
+}
+.product-info-h3{
+  font-size: 10px;
+}
+.price-row {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 33%;
+    align-items: flex-end;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.current-price::after {
+    content: " UZS";
+    font-size: 14px;
+}
+
+.old-price {
+    font-size: 14px;
+    color: #bbb;
+    text-decoration: line-through;
+}
+
+.add-btn {
+    background: white;
+    border: 1px solid #00a651; /* FeedUp-dagi yashil rang */
+    color: #00a651;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-btn:hover {
+    background: #00a651;
+    color: white;
+}
+
+.footer {
+    padding: 40px 20px 20px 20px;
+    color: #333;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col.about {
+    flex: 1.5;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.app-links img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #f2ba13;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.footer-categories h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.category-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.category-links a {
+    text-decoration: none;
+    color: #888;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #444;
+    padding-top: 20px;
+}
+
+.zoomda-logo {
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://feedup.uz/images/feedup/logo.svg">
+    <title>FeedUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="navbar">
+    <div class="nav-container">
+        <div class="brand">
+            <div class="logo-box">
+                <span class="feed">feed</span><span class="up">up</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Biz haqimizda</a>
+            <a href="#">Menyu</a>
+            <a href="#">Aksiyalar</a>
+            <a href="#">Ish o'rinlari</a>
+            <a href="#">Filiallar</a>
+            <a href="#">Aloqa</a>
+        </nav>
+
+        <div class="nav-right">
+            <button class="order-btn">Buyurtma turi</button>
+            
+            <div class="contact">
+                <div class="phone">+998 71 200 22 11</div>
+                <div class="hours">Har kuni 09:00 dan 02:45 gacha</div>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-moon"></i>
+            </div>
+        </div>
+    </div>
+    </header>
+    <hr>
+    <section class="full-slider">
+        <div class="slider-wrapper">
+            <div class="slides-container" id="slider">
+            <div class="slide active">
+                <img src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fsliders%2F2026%2F04%2F03%2F1775215681542796309.jpg&w=1920&q=75" alt="Slayd 1">
+            </div>
+            <div class="slide">
+                <img src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fsliders%2F2026%2F04%2F03%2F1775215487875635171.jpg&w=1920&q=75" alt="Slayd 2">
+            </div>
+            <div class="slide">
+                <img src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fsliders%2F2026%2F05%2F07%2F1778146002702266909.jpg&w=1920&q=75" alt="Slayd 3">
+            </div>
+            </div>
+    
+            <button class="arrow-btn prev" onclick="moveSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="arrow-btn next" onclick="moveSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+            </button>
+    
+            <div class="slider-nav">
+            <span class="indicator active" onclick="currentSlide(0)"></span>
+            <span class="indicator" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+    <section class="category-nav">
+        <button class="nav-arrow" id="scrollLeft">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="category-list" id="categoryScroll">
+            <a href="#new" class="cat-item active">Yangi mahsulotlar</a>
+            <a href="#kombo" class="cat-item">Kombo</a>
+            <a href="#lavash" class="cat-item">Lavash</a>
+            <a href="#burger" class="cat-item">Burger</a>
+            <a href="#hotdog" class="cat-item">Xot-dog</a>
+            <a href="#sendvich" class="cat-item">Sendvich</a>
+            <a href="#donar" class="cat-item">Donar</a>
+            <a href="#salatlar" class="cat-item">Salatlar</a>
+            <a href="#sous" class="cat-item">Sous</a>
+            <a href="#mafin" class="cat-item">Mafin</a>
+            <a href="#kofe" class="cat-item">Kofe</a>
+            <a href="#гарниры" class="cat-item">Гарниры</a>
+            <a href="#напитки" class="cat-item">Напитки</a>
+            <a href="#дополнительно" class="cat-item">Дополнительно</a>
+        </div>
+
+        <button class="nav-arrow" id="scrollRight">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </section>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">Yangi mahsulotlar</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F03%2F1775216347561680440.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">DONARCHI</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">45 000</span>
+                        <span class="old-price">59 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F03%2F1775216357483874087.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">PIRAMIDA COMBO</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">48 000</span>
+                            <span class="old-price">59 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F03%2F1775215745600158904.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">DONAR TOVUQLI</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">32 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F28%2F1777380621804305382.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">BIG DONAR(tovuqli)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">42 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">Kombo</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507649790807090.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">TA'BI NOZIK COMBO</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">58 000</span>
+                        <span class="old-price">67 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F08%2F1765187818442389395.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">TOYIMLI COMBO</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">81 000</span>
+                            <span class="old-price">91 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F03%2F1775216347561680440.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">DONARCHI</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">45 000</span>
+                        <span class="old-price">59 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F07%2F1765112070446958821.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">AYLANAY COMBO</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">43 000</span>
+                            <span class="old-price">55 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F03%2F1775216357483874087.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">PIRAMIDA COMBO</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">45 000</span>
+                        <span class="old-price">59 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F08%2F1765187851077853423.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">KREATIV COMBO</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">56 000</span>
+                            <span class="old-price">67 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F07%2F1765112087910468427.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">BAQUVVAT COMBO</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">103 000</span>
+                        <span class="old-price">125 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F07%2F1765112104927872895.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">BIR SHINGIL COMBO</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">57 000</span>
+                            <span class="old-price">62 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F08%2F1765187861330465534.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">KLASSIK COMBO</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">61 000</span>
+                        <span class="old-price">71 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F07%2F1765112140654488328.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">KAMTAR COMBO</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">37 000</span>
+                            <span class="old-price">48 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F07%2F1765112131105419386.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">JUFTLIK COMBO</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">129 000</span>
+                        <span class="old-price">149 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F08%2F1765187832326410445.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">TOP COMBO</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">60 000</span>
+                            <span class="old-price">70 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">LAVASH</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752571911832937647.jpg&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">LAVASH(go'shtli)</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">45 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752571931849681182.jpg&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">LAVASH(tovuqli)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">39 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752571951857748904.jpg&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">MINI LAVASH</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">29 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752571989417110710.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MINI PISHLOQLI LAVASH</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">27 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752572038322357701.jpg&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">PISHLOQLI LAVASH(go'shtli)</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">48 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752572143994050975.jpg&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">PISHLOQLI LAVASH(tovuqli)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">42 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752572027748211553.jpg&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">MINI PISHLOQLI LAVASH</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">32 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752571975697132063.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MINI LAVASH PISHLOQLI(tovuqli)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">30 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">BURGER</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F21%2F1776769851225875159.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">XL BBQ BURGER</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">41 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F18%2F1776524861229547617.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">XL BBQ CHIZBURGER</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">44 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F18%2F1776524870295318543.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">XL BBQ DABLCHIZBURGER</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">61 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F08%2F04%2F1754300961779778213.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">XL BBQ CHIZBURGER MINI</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">29 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F08%2F04%2F1754300970406418204.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">XL BBQ DABLCHIZBURGER MINI</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">41 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507631098969649.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">CHICKENZINGER</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">36 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507631717315935.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">PISHLOQLI CHICKENZINGER</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">39 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507632094442490.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">PISHLOQLICHICKEN BURGER</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">38 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F28%2F1777380998439758680.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">PRINCE BURGER</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">43 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F21%2F1776769813798794293.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">PRINCE CHIZBURGER</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">46 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F21%2F1776769832919581919.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">PRINCE DABLCHIZBURGER</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">62 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507634710736079.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">LONG APPER(go'shtli)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">58 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507633716875431.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">LONG APPER(tovuqli)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">41 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">XOT-DOG</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752573367387117951.jpg&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">XOT-DOG PISHLOQLI</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">30 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752573343592220089.jpg&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">XOT-DOG CLASSIK</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">22 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">SENDVICH</h2>
+        </div>
+    
+        <div class="product-grid">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="badge">Yangi mahsulot</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-image">
+                        <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752573274651969760.jpg&w=640&q=75" alt="DONARCHI">
+                    </div>
+                    <div class="product-info">
+                        <p class="h3">KLAB SENDVICH</p>
+                        <div class="price-row">
+                            <div class="price-box">
+                                <span class="current-price">43 000</span>
+                            </div>
+                            <button class="add-btn">Qo'shish</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>    
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">DONAR</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F30%2F1777545438672039450.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">DONAR</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">38 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F03%2F1775215745600158904.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">DONAR TOVUQLI</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">32 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752573434014414653.jpg&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">BIG DONAR</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">47 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F28%2F1777380621804305382.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">BIG DONAR(tovuqli)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">42 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">SALATLAR</h2>
+        </div>
+    
+        <div class="product-grid">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="badge">Yangi mahsulot</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="product-image">
+                        <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574290415312258.jpg&w=640&q=75" alt="DONARCHI">
+                    </div>
+                    <div class="product-info">
+                        <p class="h3">SALAT SEZAR</p>
+                        <div class="price-row">
+                            <div class="price-box">
+                                <span class="current-price">40 000</span>
+                            </div>
+                            <button class="add-btn">Qo'shish</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main> 
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">SOUS</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507620826542454.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">SOUS HEINZ BBQ</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">5 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507622438062099.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">SOUS HEINZ SARIMSOQLI</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">5 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507621204877917.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">SOUS HEINZ KETCHUP</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">5 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507621612209597.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">SOUS HEINZ PISHLOQLI</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">5 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">MAFIN</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F15%2F1765801411588599267.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">BANANLI KRUASSAN</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">42 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F15%2F1765801431968510029.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">QULUPNAYLI KRUASSAN</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">42 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F15%2F1765801425172323495.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">MUZQAYMOQLI KRUASSAN</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">42 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F11%2F1775904792035419507.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">SHOKOLADLI KRUASSAN</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">32 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F01%2F1775051365075408880.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">MINI BANANLI KRUASSAN</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">27 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F01%2F1775051399707890236.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MINI QUUPNAYLI KRUASSAN</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">27 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F01%2F1775051391735420181.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">MINI MUZQAYMOQLI KRUASSAN</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">27 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F01%2F1775051409819435112.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MINI SHOKOLADLI KRUASSAN</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">22 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507619839576231.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">PONCHIK</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">21 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">KOFE</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507629550063861.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">KOFE LATTE</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">17 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507628970377185.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">KOFE CAPUCHINO</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">17 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507629747609313.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">KOFE ESPRESSO</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">15 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507629206388528.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">KOFE AMERICANO</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">15 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">Гарниры</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574763774814419.jpg&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">FRI</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">19 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574785015354129.jpg&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MINI FRI</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">10 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574774969355820.jpg&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">JAYDARI KARTOSHKA</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">21 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574796856624153.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MINI JAYDARI KARTOSHKA</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">11 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574874228477768.jpg&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">PISHLOQLI KUBOK</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">31 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574822304402975.jpg&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MINI PISHLOQLI KUBOK</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">15 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574884415424229.jpg&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">POPS</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">24 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574839486806830.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MINI POPS</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">12 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574853542260915.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">NAGGETS</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">23 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574811876932871.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MINI NAGGETS</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">12 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574748074171338.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">BBQ TOVUQLI</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">43 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752574755949303295.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">CHICKEN STICK</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">27 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">Напитки</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F08%2F1775646980227165415.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">PEPSI(500ml)</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">12 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2026%2F04%2F08%2F1775646963598026822.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">PEPSI(400ml)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">11 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F15%2F1765793890583858501.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">MIRINDA(500ml)</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">12 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F15%2F1765793882374793312.webp&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">MIRINDA(400ml)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">11 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F15%2F1765793686648120006.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">7UP(500ml)</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">12 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F12%2F15%2F1765793686648120006.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">7UP(400ml)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">11 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575620105413243.jpg&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">AYSTI</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">24 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575881928516624.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">LIMONAD(rezavor)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">19 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575651217221506.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">LIMONAD(qulupnaylik)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">19 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575644878292255.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">LIMONAD(marakuya)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">19 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575872117032633.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">LIMONAD(moxito)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">19 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575798069628392.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">CHOY(blak)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">5 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575798069628392.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">CHOY(green)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">5 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+                
+            </div><div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575789627605452.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">LIMON CHOY(black)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">7 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+                
+            </div><div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575789627605452.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">LIMON CHOY (green)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">7 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+                
+            </div><div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="100%" height="900px" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F15%2F1752575633470960176.jpg&w=640&q=75" alt="BIG DONAR ">
+                </div>
+                <div class="product-info">
+                    <p class="h3">CHOY(brusnika)</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">16 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <div class="title-container">
+            <h2 class="divider-title">Дополнительно</h2>
+        </div>
+    
+        <div class="product-grid">
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="200" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507634872322187.webp&w=640&q=75" alt="DONARCHI">
+            </div>
+            <div class="product-info">
+                <p class="h3">PISHLOQ</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">3 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="card-top">
+                    <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="product-image">
+                    <img width="300" height="400px" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507635159695748.webp&w=640&q=75" alt="PIRAMIDA COMBO">
+                </div>
+                <div class="product-info">
+                    <p class="h3">STAKAN</p>
+                    <div class="price-row">
+                        <div class="price-box">
+                            <span class="current-price">1 000</span>
+                        </div>
+                        <button class="add-btn">Qo'shish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+            <div class="card-top">
+                <span class="badge">Yangi mahsulot</span>
+                <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="product-image">
+                <img width="300" height="400" src="https://feedup.uz/_next/image?url=https%3A%2F%2Fcdn.zoomda.uz%2Fproducts%2F2025%2F07%2F14%2F1752507635411672313.webp&w=640&q=75" alt="DONARLI TOVUQ">
+            </div>
+            <div class="product-info">
+                <p class="h3">HALAPENO 16gr</p>
+                <div class="price-row">
+                    <div class="price-box">
+                        <span class="current-price">3 000</span>
+                    </div>
+                    <button class="add-btn">Qo'shish</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer class="footer">
+    <div class="footer-top">
+        <div class="footer-col about">
+            <img src="https://feedup.uz/_next/image?url=%2Fimages%2Ffeedup%2Flogo-footer.svg&w=384&q=75" alt="Feed Up Logo" class="footer-logo">
+            <p>Feed Up - O'zbekistondagi yetakchi fast-fud restoranlar tarmog‘i bo‘lib, u 13 yildan ortiq vaqt davomida mamlakat aholisini yangi va mazali taomlari bilan quvontirib keladi</p>
+            <div class="app-links">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Kompaniya haqida</h3>
+            <ul>
+                <li><a href="#">Biz haqimizda</a></li>
+                <li><a href="#">Menyu</a></li>
+                <li><a href="#">Aksiyalar</a></li>
+                <li><a href="#">Filiallar</a></li>
+                <li><a href="#">Ish o'rinlari</a></li>
+                <li><a href="#">Aloqa</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Ma'lumotlar</h3>
+            <ul>
+                <li><a href="#">Yetkazib berish</a></li>
+                <li><a href="#">To'lov</a></li>
+                <li><a href="#">Maxfiylik siyosati</a></li>
+                <li><a href="#">Foydalanish shartlari</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col social">
+            <h3>Bizning ijtimoiy tarmoqlar</h3>
+            <ul>
+                <li><span>📞</span> +998 71 200 22 11</li>
+                <li><span>📧</span> feedup.uz@yandex.ru</li>
+                <li><span>📘</span> Facebook</li>
+                <li><span>📷</span> Instagram</li>
+                <li><span>✈️</span> Telegram</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-categories">
+        <h3>Kategoriyalar</h3>
+        <div class="category-links">
+            <a href="#">Kombo</a>
+            <a href="#">Lavash</a>
+            <a href="#">Burger</a>
+            <a href="#">Хот-дог</a>
+            <a href="#">Sendvich</a>
+            <a href="#">Donar</a>
+            <a href="#">Pitsa</a>
+            <a href="#">Salatlar</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Feed Up. Baribir huquqlar himoyalangan.</p>
+        <div class="zoomda-logo">zoomda</div>
+    </div>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
